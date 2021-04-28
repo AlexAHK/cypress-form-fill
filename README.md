@@ -11,7 +11,7 @@ eg type "npm install"
 
 ![image](https://user-images.githubusercontent.com/15697684/116335161-61aaf100-a7a4-11eb-867e-9bcdf2b03199.png)
 
-5) The test should run automatically and when it is finished you should see that the test(s) passed (see second image).
+5) The test should run automatically and when it is finished you should see that the test(s) passed (see image below) with green check marks on the left-hand side.
 
 ![image](https://user-images.githubusercontent.com/15697684/116335521-02011580-a7a5-11eb-9e1a-7d2d384dbb71.png)
 
