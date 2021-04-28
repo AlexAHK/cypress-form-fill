@@ -6,7 +6,7 @@ describe('it goes to the contact page and fills out both forms', () => {
         cy.visit('/');
     });
 
-    it('fills out Sales form', () => {
+    it('fills out Sales form and then the Customer Care form', () => {
 
         // could get the correct iframe via the src attribute
         // OR find the title and then navigate to the iframe that comes next
@@ -54,16 +54,14 @@ describe('it goes to the contact page and fills out both forms', () => {
             .children('label').contains('Comments/Questions')
             .next('textarea')
             .type('A ty govorish\' po russki?');
-    });
 
-    it('fills out the Customer Care form', () => {
         const getIframeDocument2 = () => {
             return cy
                 .contains('Product Support / Customer Care')
                 .parent()
                 .next('iframe')
                 .its('0.contentDocument').should('exist')
-          }
+          };
           
         const getIframeBody2 = () => {
             return getIframeDocument2()
@@ -100,6 +98,6 @@ describe('it goes to the contact page and fills out both forms', () => {
             .children('label').contains('Comments/Questions')
             .next('textarea')
             .type('¿Hablas español?');    
-        });
+    });
 });
 
